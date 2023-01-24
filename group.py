@@ -6,7 +6,6 @@ def get_groups():
         config_details = get_google_config_dict()
         customer_id = config_details['customer_id'] 
         service = _admin_auth()
-        # {group_email : [{member_email,member_status,member_role}]}
         data = []
         response_group = service.groups().list(customer=customer_id).execute()
         
