@@ -52,6 +52,7 @@ for group in all_groups:
   
   for member in all_members:
     if 'email' in member:
+
       row = group['email'],group['name'],group['description'],member['email'],member['role']
       data_list.extend([row])
     else:
@@ -60,6 +61,6 @@ for group in all_groups:
   del all_members[:]
 
 with open("Output.csv", "w", newline="") as Output_File:
-  writer = csv.writer(Output_File,quotechar='|', quoting=csv.QUOTE_MINIMAL)
+  writer = csv.writer(Output_File,quotechar='"', quoting=csv.QUOTE_ALL)
   writer.writerow(['Group Email','Group Name','Group Description','Member Email','Member Role'])
   writer.writerows(data_list)
