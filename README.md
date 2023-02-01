@@ -16,6 +16,8 @@ mv config_sample.cfg config.cfg
 ```
 Update the customer_id variable in the config.cfg to match your customer id from your google admin account settings page, save the file
 ```sh
-python group.py >> groups.json
+python group.py
 ```
 A popup should come up, login and accept the access. This will write a token.json file to your local drive.
+
+This will also output a csv file to the directory after you run the script.
