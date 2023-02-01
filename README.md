@@ -1,5 +1,5 @@
-# Basic ReadMe
-This was created quickly to pull all groups and users within those groups and output to json format.
+# Google Groups and Users
+This was created quickly to pull all groups and users within those groups and output to csv format.
 
 
 ## Requirements
