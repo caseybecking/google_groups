@@ -3,3 +3,8 @@ token.json
 venv/*
 config.cfg
 groups.json
+PDX_GoogleGroupsOutput.csv
+.gitignore
+Pipfile.lock
+.dccache
+Pipfile
